@@ -1,7 +1,7 @@
 # RouteLocker
 
 ## Futures:
-+ Most PoverFull Route Processor for React Router DOM V6
++ Most Powerfull Route Processor for React Router DOM V6
 + 3 Variable Chaker.
 + Unlimited Role Chaker For Bigger Sites.
 + Authentication Chaker With Context Only.
