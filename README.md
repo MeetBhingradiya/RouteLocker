@@ -1,4 +1,4 @@
-# <img src="https://img.icons8.com/external-others-inmotus-design/30/000000/external-Route-geo-others-inmotus-design.png"/> RouteLocker
+# <img src="https://img.icons8.com/external-others-inmotus-design/40/000000/external-Route-geo-others-inmotus-design.png" style="position: relative; top: 10px"/> RouteLocker
 
 ## Futures: Release V2
 + Most Powerfull Route Processor for React Router DOM V6
