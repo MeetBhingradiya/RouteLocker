@@ -35,7 +35,7 @@ export const MySite = createContext(null);
 import { <Your Context> } from './Your Context File';
 const Context: any = useContext(Your Context);
 ```
-+ Step 3 : Pass Props to RouteLocker. [Properties](#properties)
++ Step 3 : Pass Props to RouteLocker. [Properties](#-properties)
 + Step 4 : Enjoy RouteLocker!
 ## <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/25/000000/external-pie-chart-user-interface-anggara-flat-anggara-putra.png"/> Usage
 ### <img src="https://img.icons8.com/ultraviolet/25/000000/react--v1.png"/> React Router DOM V6
