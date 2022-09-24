@@ -15,8 +15,8 @@
 ## Languages
 | Languages | V1 | V2 |
 | :---: | :---: | :---: |
-| <img src="https://img.icons8.com/fluency/35/000000/javascript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> |
-| <img src="https://img.icons8.com/fluency/35/000000/typescript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> |
+| <img src="https://img.icons8.com/fluency/35/000000/javascript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> ```Bugs``` |
+| <img src="https://img.icons8.com/fluency/35/000000/typescript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> ```Bugs``` | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> |
 
  ## <img src="https://img.icons8.com/external-sbts2018-outline-color-sbts2018/25/000000/external-install-basic-ui-elements-2.3-sbts2018-outline-color-sbts2018.png"/> Install
 + Step 1 : Make Context With Create Context and **Export It Not Default**.
