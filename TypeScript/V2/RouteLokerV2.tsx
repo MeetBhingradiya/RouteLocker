@@ -49,8 +49,8 @@ function RouteLockerV2({
                 } else if (mode === 'onlyVariable' && Hooks?.useVariable?.enable === true && typeof Hooks.useVariable.User_Variable === 'string' && typeof Hooks.useVariable.Expect_Variable === 'string') {
                     return true
                 } else if (mode === 'useBoth' && Hooks?.useBoth?.length === 2) {
-                    const use1: any = Hooks.useBoth[0];
-                    const use2: any = Hooks.useBoth[1];
+                    const use1: String = Hooks.useBoth[0];
+                    const use2: String = Hooks.useBoth[1];
                     if ((use1 === 'onlyAuth' || use1 === 'onlyRole' || use1 === 'onlyVariable') && (use2 === 'onlyAuth' || use2 === 'onlyRole' || use2 === 'onlyVariable')) {
                         return true
                     } else {
@@ -87,18 +87,35 @@ function RouteLockerV2({
     }
 
     const Role_Verify = () => {
-        if (Context.Role === Hooks?.useRole?.Expect_Role) {
-            return true;
+        if (Hooks.useRole?.AntiRole !== true) {
+            if (Context.Role === Hooks.useRole?.Expect_Role) {
+                return true;
+            } else {
+                return false;
+            }
         } else {
-            return false;
+            if (Context.Role !== Hooks.useRole.Expect_Role) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 
     const Variable_Verify = () => {
-        if (Hooks?.useVariable?.User_Variable === Hooks?.useVariable?.Expect_Variable) {
-            return true;
-        } else {
-            return false;
+        if (Hooks.useVariable?.AntiVariable !== true) {
+            if (Hooks?.useVariable?.User_Variable === Hooks?.useVariable?.Expect_Variable) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        else {
+            if (Hooks?.useVariable?.User_Variable !== Hooks?.useVariable?.Expect_Variable) {
+                return false;
+            } else {
+                return true;
+            }
         }
     }
 
@@ -153,7 +170,7 @@ function RouteLockerV2({
         }
     }
 
-    const Route_ProcessorV6 = () => {
+    const Route_ProcessorV2 = () => {
         if (Validate_Props() === true) {
             if (mode === "onlyAuth") {
                 if (Auth_Verify() === true) {
@@ -193,7 +210,7 @@ function RouteLockerV2({
         }
     }
 
-    return Route_ProcessorV6()
+    return Route_ProcessorV2()
 }
 
 export { RouteLockerV2 };

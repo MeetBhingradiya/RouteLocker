@@ -1,22 +1,23 @@
 # <img src="https://img.icons8.com/external-others-inmotus-design/30/000000/external-Route-geo-others-inmotus-design.png"/> RouteLocker
 
-## Futures:
+## Futures: Release V2
 + Most Powerfull Route Processor for React Router DOM V6
 + 3 Variable Validator.
++ 1 Auth Variable , Unlimited Role Variable  , 1 Custom Variable Support.
 + Unlimited Role Validator For Bigger Sites.
 + Authentication Validator With Context Only.
++ Anti Variable Validator.
 
-## Future Updates
-+ Anti Variable Validator. ```Beta```
+## Future Updates : Release V3
 + Permission Validator. ```Beta```
 + Multi-Version Support. [React Router DOM V5] ```Soon!```
 + Public And Privet Route Snippets ```Soon!```
 
 ## Languages
-| Languages | V1 | V2 |
-| :---: | :---: | :---: |
-| <img src="https://img.icons8.com/fluency/35/000000/javascript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> ```Bugs``` |
-| <img src="https://img.icons8.com/fluency/35/000000/typescript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> ```Bugs``` | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> |
+| Languages | V1 | V2 | V3 |
+| :---: | :---: | :---: | :---: |
+| <img src="https://img.icons8.com/fluency/35/000000/javascript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/>  | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/>  |
+| <img src="https://img.icons8.com/fluency/35/000000/typescript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/>  | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/>  |
 
  ## <img src="https://img.icons8.com/external-sbts2018-outline-color-sbts2018/25/000000/external-install-basic-ui-elements-2.3-sbts2018-outline-color-sbts2018.png"/> Install
 + Step 1 : Make Context With Create Context and **Export It Not Default**.
@@ -105,9 +106,15 @@ const Context: any = useContext(Your Context);
 ```
 >## <img src="https://img.icons8.com/fluency/25/000000/rotate-right.png"/> Change Logs
 >
-> #### V1
-> + JavaScript Only V1
+> ### Release V2 
+> + TypeScript With V1 and Release V2 Added
+> + Added New Proparites Object
+> + Unlimited Role Validator and Redirects.
+> + Anti Variable Validator.
+> + 1 Auth Variable , Unlimited Role Variable  , 1 Custom Variable Support.
 >
-> #### V2
-> + TypeScript Only With V2 Added
-> + ```README.md``` Bug Fixes.
+> ### V1
+> + JavaSript Only V1.
+> + 3 Variable Validator.
+> + 4 Role Redirects
+> + 1 Auth Variable , 4 Role Variable , 1 Custom Variable Support.

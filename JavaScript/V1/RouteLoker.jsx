@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { Navigate, Outlet, Route } from 'react-router-dom'
-// import { toast, ToastContainer } from 'react-toastify'
 import { MySite } from './Router'
 
 function RouteLocker({ type, useRole, Expect_Role, useAuth, useVariable, Variable, Expect_Variable, Redirect, useRoleRedirect , useVerison5 , path , element , caseSensitive ,  children , index , key  }) {
