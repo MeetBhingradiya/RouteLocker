@@ -45,7 +45,7 @@ import { MySite } from './Router'
  * <RouteLocker useVerison5={true} {...props} />
  * ```
  * 
- *  ```CopyRight teamsm(c)2022``` ```license : Apache-2.0``` ```Authr```
+ * ```Author : Meet Bhingradiya```
  */
 function RouteLocker({ type, useRole, Expect_Role, useAuth, useVariable, Variable, Expect_Variable, Redirect, useRoleRedirect , useVerison5 , path , element , caseSensitive ,  children , index , key  }: any) {
     

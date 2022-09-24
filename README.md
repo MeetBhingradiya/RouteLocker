@@ -1,42 +1,55 @@
-# RouteLocker
+# <img src="https://img.icons8.com/external-others-inmotus-design/30/000000/external-Route-geo-others-inmotus-design.png"/> RouteLocker
 
 ## Futures:
 + Most Powerfull Route Processor for React Router DOM V6
 + 3 Variable Chaker.
 + Unlimited Role Chaker For Bigger Sites.
 + Authentication Chaker With Context Only.
-+ Anti Variable Chaker. ```Beta```
 
 ## Future Updates
++ Anti Variable Chaker. ```Beta```
 + Permission Chaker. ```Beta```
 + Multi-Version Support. [React Router DOM V5] ```Soon!```
++ Public And Privet Route Snippets ```Soon!```
 
 ## Languages
 | Languages | V1 | V2 |
 | :---: | :---: | :---: |
-| JavaScript | true | true|
-| TypeScript | true | true |
+| <img src="https://img.icons8.com/fluency/35/000000/javascript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> |
+| <img src="https://img.icons8.com/fluency/35/000000/typescript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> |
 
- ## Install
- ```
-<MyContext.Provider value={{ Auth, Role }}>
-    <RouteLocker {...props} />
-</MyContext.Provider>
+ ## <img src="https://img.icons8.com/external-sbts2018-outline-color-sbts2018/25/000000/external-install-basic-ui-elements-2.3-sbts2018-outline-color-sbts2018.png"/> Install
++ Step 1 : Make Context With Create Context and **Export It Not Default**.
 ```
-## Usage
-### React Router DOM V6
+export const MySite = createContext(null);
+```
++ Step 2 : Make RouteLocker To Look Like This...
+```
+<Your Context.Provider value={{ Auth, Role }}>
+    <RouteLocker {...props} />
+</Your Context.Provider>
+```
++ Step 2 : Got to RouteLoker File and Edit Context Name and Import your Context.
+```
+import { <Your Context> } from './Your Context File';
+const Context: any = useContext(Your Context);
+```
++ Step 3 : Pass Props to RouteLocker. [Properties](#properties)
++ Step 4 : Enjoy RouteLocker!
+## <img src="https://img.icons8.com/external-anggara-flat-anggara-putra/25/000000/external-pie-chart-user-interface-anggara-flat-anggara-putra.png"/> Usage
+### <img src="https://img.icons8.com/ultraviolet/25/000000/react--v1.png"/> React Router DOM V6
 ```
 <Route element={<RouteLocker {...props}/>}>
 {... Your Routes}
 </Route>
 ```
 
-### React Router DOM V5 [Not Added]
+### <img src="https://img.icons8.com/ultraviolet/25/000000/react--v1.png"/> React Router DOM V5 [Not Added]
 ```
 <RouteLocker useVerison5={true} {...props} />
 ```
 
-### Properties:
+## <img src="https://img.icons8.com/fluency/25/000000/property-script.png"/> Properties:
 ```
 {
     //  Mode : OnlyAuth is for Authentication Chaker
@@ -90,13 +103,11 @@
     }
 }
 ```
->## <img src="https://img.icons8.com/fluency/18/000000/rotate-right.png"/> Change Logs
+>## <img src="https://img.icons8.com/fluency/25/000000/rotate-right.png"/> Change Logs
 >
 > #### V1
 > + JavaScript Only V1
 >
 > #### V2
-> + TypeScript With V1 and V2 Added
-
-### License
-```CopyRight teamsm(c)2022``` ```license : Apache-2.0``` ```Author : Meet Bhingradiya```
+> + TypeScript Only With V2 Added
+> + ```README.md``` Bug Fixes.

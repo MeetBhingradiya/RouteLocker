@@ -120,7 +120,7 @@ interface RouteLokerProps {
  * <RouteLocker useVerison5={true} {...props} />
  * ```
  * 
- *  ```CopyRight teamsm(c)2022``` ```license : Apache-2.0``` ```Author : Meet Bhingradiya```
+ * ```Author : Meet Bhingradiya```
  */
 function RouteLockerV2({
     mode,
