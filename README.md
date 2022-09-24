@@ -2,13 +2,13 @@
 
 ## Futures:
 + Most Powerfull Route Processor for React Router DOM V6
-+ 3 Variable Chaker.
-+ Unlimited Role Chaker For Bigger Sites.
-+ Authentication Chaker With Context Only.
++ 3 Variable Validator.
++ Unlimited Role Validator For Bigger Sites.
++ Authentication Validator With Context Only.
 
 ## Future Updates
-+ Anti Variable Chaker. ```Beta```
-+ Permission Chaker. ```Beta```
++ Anti Variable Validator. ```Beta```
++ Permission Validator. ```Beta```
 + Multi-Version Support. [React Router DOM V5] ```Soon!```
 + Public And Privet Route Snippets ```Soon!```
 

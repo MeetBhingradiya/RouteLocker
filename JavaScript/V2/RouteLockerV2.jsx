@@ -3,28 +3,6 @@ import { useContext } from "react";
 import { Navigate, Outlet } from 'react-router-dom';
 import { MySite } from './Router';
 
-/**
- * ### RouteLocker
- * + Most Powerfull Route Locker in React Router DOM V6
- * + Coming Soon ! : Multi Version React Router DOM ```RouteLocker()```
- * + RouteLocker contains Powerfull Route_Processor and Props Validator
- * + RouteLocker Most Efficient Privet Router and Public Router
- * 
- * #### Usage
- * ##### React Router DOM V6
- * ```
- * <Route element={<RouteLocker {...props}/>}>
- * {... Your Routes}
- * </Route>
- * ```
- * 
- * ##### React Router DOM V5 [Not Added]
- * ```
- * <RouteLocker useVerison5={true} {...props} />
- * ```
- * 
- * ```Author : Meet Bhingradiya```
- */
 function RouteLockerV2({
     mode,
     Redirect,

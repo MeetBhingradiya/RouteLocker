@@ -3,50 +3,6 @@ import { Navigate, Outlet, Route } from 'react-router-dom'
 // import { toast, ToastContainer } from 'react-toastify'
 import { MySite } from './Router'
 
-
-/**
- * ### RouteLocker
- * + Most Powerfull Route Locker in React Router DOM V6
- * + Coming Soon ! : Multi Version React Router DOM ```RouteLocker()```
- * + RouteLocker contains Powerfull Route_Processor and Props Validator
- * + RouteLocker Most Efficient Privet Router and Public Router
- * 
- * #### Parameters
- * + ```type``` : ```6 Types``` Heare is List of Types
- * + + ```onlyAuth``` : only Authentication Variable
- * + + ```onlyRole``` : only Role Variable
- * + + ```onlyVariable``` : only Custom Variable
- * + + ```setAuth&Role``` : use Authentication Variable ```AND``` Role Variable
- * + + ```setAuth&Variable``` : use Authentication Variable ```AND``` Custom Variable
- * + + ```setRole&Variable``` : use Role Variable ```AND``` Custom Variable
- * + + ```ALL``` : use 3 type in One Time ```useAuth , useRole , useVariable```
- * 
- * + ```Redirect``` : if your Conditons fails User Redirect That Location ```Note: This is Client Side Routing Only```
- * 
- * + ```useRole``` : if your type contains Role you must need to pass this true
- * + ```Expect_Role``` : if your useRole is true , so Expected Role User must be needed for View Page
- * 
- * + ```useAuth``` : if your type contains Auth you must need to pass this true
- * 
- * + ```useVariable``` : if your typew contains Variable you need to pass this true
- * + ```Variable``` : any custom Variable
- * + ```Expect_Variable``` : Expect_Variable that you expect from Variable
- * 
- * #### Usage
- * ##### React Router DOM V6
- * ```
- * <Route element={<RouteLocker {...props}/>}>
- * {... Your Routes}
- * </Route>
- * ```
- * 
- * ##### React Router DOM V5 [Not Added]
- * ```
- * <RouteLocker useVerison5={true} {...props} />
- * ```
- * 
- * ```Author : Meet Bhingradiya```
- */
 function RouteLocker({ type, useRole, Expect_Role, useAuth, useVariable, Variable, Expect_Variable, Redirect, useRoleRedirect , useVerison5 , path , element , caseSensitive ,  children , index , key  }) {
     
     const Context = useContext(MySite)
