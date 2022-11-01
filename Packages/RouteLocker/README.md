@@ -9,7 +9,7 @@
 
 ## Add With Manual
 | Languages | V1 | V2 | V2.1 | V3 |
-| :---: | :---: | :---: | :---: | :---: |
+| ----- | ----- | ----- | ----- | ----- |
 | <img src="https://img.icons8.com/fluency/35/000000/javascript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/>  | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> |
 | <img src="https://img.icons8.com/fluency/35/000000/typescript.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/>  | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/> | <img src="https://img.icons8.com/fluency/20/000000/checkmark.png"/>  | <img src="https://img.icons8.com/fluency/20/000000/delete-sign.png"/> |
 
