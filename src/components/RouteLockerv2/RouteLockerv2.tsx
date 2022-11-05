@@ -1,82 +1,6 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 
-interface Route_Locker_Debug_Props {
-    // Modes OF RouteLoker System
-    mode: 'onlyAuth' | 'onlyRole' | 'onlyVariable' | 'onlyRedirect' | 'useBoth' | 'useAll';
-    // Authetication And User States
-    User_State: {
-        Auth?: Boolean | false
-        Role?: String | 'user'
-        Variable?: any | undefined
-    }
-    // Normal Redirect UseOnly
-    Redirect?: {
-        // ? Default Redirect Mode is 'Normal' Always ON
-        mode: 'Normal' | 'RoleRedirect' | 'API'
-        // ? Auto Detect ON  Normal => Client , RoleRedirect => Client , API => Server
-        type: 'Client' | 'Server'
-        // ? RoleRedirect Mode Data Must Be Provided otherwise it will be throw Error
-        /**
-         * Advanced Role Redirect System
-         * @param {Array<String>} Roles
-         * @param {Array<String>} Links
-         * 
-         * Note : 
-         * + Roles and Links must be same length
-         * + Role1 To Be Redirected At Link1
-         * + if first Role is admin so you need to pass first Link Admin Dashbord Like : ```/admin/home```
-         */
-        useRoleRedirect?: {
-            Links: Array<String> | ['/admin/home', '/user/home']
-            Roles: Array<String> | ['admin', 'user']
-        }
-        // ? Link Must Be Provided otherwise it will be throw Error
-        Link?: String
-    }
-    // User Authetication Mode Data
-    useAuth?: {
-        enable: Boolean | false
-        AntiAuth?: Boolean | false
-    }
-    // User Role Mode Data
-    useRole?: {
-        enable: Boolean | false
-        Expect_Role: String
-        AntiRole: Boolean | false
-    }
-    // User Variable Mode Data
-    useVariable?: {
-        enable: Boolean | false
-        Expect_Variable?: String
-        AntiVariable: Boolean | false
-    }
-    /**
-     * You Put modes in Array that you need
-     * + onlyAuth
-     * + onlyRole
-     * + onlyVariable
-     * + onlyRedirect
-     */
-    useBoth?: Array<String>
-    /**
-     * You enable this mode to You use all modes in RouteLoker Listed Down Below
-     * + onlyAuth
-     * + onlyRole
-     * + onlyRedirect
-     */
-    useAll?: Boolean | false
-    /**  
-     * You can use Any of this Modes.
-     * + onlyAuth
-     * + onlyRole
-     * + onlyVariable
-     * + onlyRedirect
-     * + onlyDebug
-     */
-    useAny?: Array<String>
-}
-
 const Debug = (String?: 'testing') => {
     if (typeof String === 'undefined') {
         var Debug_Test_Data: Array<Object> = []
@@ -229,7 +153,7 @@ function RouteLocker({ Properties }: any): Array<String> | any {
     }: RouteLokerProps = Properties[0]
 
     const PackageName: String = 'RouteLocker'
-    const Version: String = 'V3'
+    const Version: String = 'V2.2'
     const Package: String = `${PackageName}${Version}`
 
     function Validate_Props() {
@@ -482,7 +406,7 @@ function RouteLocker({ Properties }: any): Array<String> | any {
 
     const Role_Redirect = () => {
         if (Redirect?.mode === 'RoleRedirect' && Role_Verify() === false) {
-            return Redirect?.useRoleRedirect?.Roles.map((Role: String, Index: any ) => {
+            return Redirect?.useRoleRedirect?.Roles.map((Role: String, Index: any) => {
                 if (User_State.Role === Role) {
                     if (Role === 'guest') {
                         return <Outlet key={Index} />
@@ -547,5 +471,7 @@ function RouteLocker({ Properties }: any): Array<String> | any {
     return Route_Processor()
 }
 
-export default RouteLocker;
+export { RouteLocker };
 export type { RouteLokerProps };
+
+

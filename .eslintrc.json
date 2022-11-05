@@ -1,0 +1,74 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-max-props-per-line": [
+      2,
+      {
+        "maximum": 1,
+        "when": "multiline"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.style.tsx",
+        "*.style.jsx",
+        "*.styled.tsx",
+        "*.styled.jsx"
+      ],
+      "rules": {
+        "import/prefer-default-export": 0
+      }
+    },
+    {
+      "files": [
+        "*.stories.@(ts|tsx|js|jsx|mjs|cjs)"
+      ],
+      "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "import/no-named-as-default": 0,
+        "@typescript-eslint/no-unsafe-assignment": 0,
+        "@typescript-eslint/no-unsafe-member-access": 0
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}

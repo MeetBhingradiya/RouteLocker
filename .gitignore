@@ -1,5 +1,7 @@
-node_modules
+.vscode/
+node_modules/
 package-lock.json
-Package/*
 dist
-old
+*.tgz
+bundle-analysis.html
+debug.log
