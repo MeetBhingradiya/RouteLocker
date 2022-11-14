@@ -1,7 +1,47 @@
-# Route Locker
+# <img src="https://img.icons8.com/external-others-inmotus-design/40/null/external-Route-geo-others-inmotus-design.png"/> Route Locker
 
-- Ultimate Route Locking System for `react-router-dom`
+- Ultimate Route Authriozation System
+
 <!-- + A Powerfull Client Side and Server Side Routing For React -->
+
+### Install
+
+```bash
+npm install react-route-locker 
+```
+
+OR
+
+```bash
+yarn add react-route-locker 
+```
+
+### Versions for Open Source
+
+<!-- JavaScript <img src="https://img.icons8.com/fluency/48/null/javascript.png"/> -->
+<!-- TypeScript <img src="https://img.icons8.com/fluency/48/null/typescript--v2.png"/> -->
+<!-- Source Code <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> -->
+
+<!-- Beta <img src="https://img.icons8.com/fluency/40/null/circular-arrows.png"/> -->
+<!-- Avilable <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> -->
+<!-- Not Avilable <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> -->
+
++ Public
++ + This is avilable for all users of ```npm``` and ```yarn```.
+
+| <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> | V1 | V2 | V3 |
+| - | -- | -- | -- |
+| <img src="https://img.icons8.com/fluency/48/null/javascript.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> |
+| <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/circular-arrows.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> |
+
++ Private
++ + This is avilable only for ```Members of TeamSM```.
++ + Private Version Been Prmoted To Public Version After Testing.
+
+| <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> | V1 | V2 | V3 | V4 |
+| - | -- | -- | -- | -- |
+| <img src="https://img.icons8.com/fluency/48/null/javascript.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/circular-arrows.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> |
+| <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/circular-arrows.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> |
 
 ### Futures : V2
 
@@ -19,12 +59,12 @@
 
 ### Future Updates : V3+
 
-- Debug Mode For Developers... `in V4+ / Not Added`
-- Auto Apply React Error Boundaries With Dedicated Fully Detailed Error Pages.`in V3 Added`
-- `react-router-dom` V5 Support. `Not Added`
-- Prevention From Unauthorised Browsers you need (Registerd and Recommendations Browsers : 8) `in V3 Added`
-- Unlimited Custom Variable Support. `in V4+ / Not Added`
 - 7 Modes. `in V3 Added`
+- Auto Apply React Error Boundaries.`in V3 Added`
+- Prevention From Unauthorised Browsers you need (Trusted and Recommendations Browsers : 8) `in V3 Added`
+- Debug Mode For Developers... `in V4+ / Not Added`
+- Unlimited Custom Variable Support. `in V4+ / Not Added`
+- `react-router-dom` V5 Support. `Not Added`
 
 ### Disadvantages
 
@@ -32,26 +72,24 @@
 
 ### Documention
 
-`npm install react-route-locker`
-
-```js
-<Route element={<RouteLocker Properties={[Routers.PublicRouter]} />}>
+```TS
+<Route element={<RouteLocker Properties={[PublicRouter]} />}>
   <Route path={`/auth/login`} element={<LOGIN />} />
   <Route path={`/auth/signup`} element={<SIGNUP />} />
 </Route>
 ```
 
-### About
+> ### About
 
 - Made By Meet Bhingradiya
 - License : `MIT`
-- Available on npm with `npm i react-route-locker`
+- Version : `2.1`
 
-### Snippets
+### <img src="https://img.icons8.com/fluency/35/null/source-code.png"/> Snippets
 
-#### 1) PublicRouter
+#### <img src="https://img.icons8.com/fluency/25/null/globe.png"/> PublicRouter
 
-```js
+```TS
 const PublicRouter = {
   User_State: {
     Auth: Auth,
@@ -72,9 +110,9 @@ const PublicRouter = {
 };
 ```
 
-#### 1) PrivateRouter
+#### <img src="https://img.icons8.com/ios-filled/25/null/keyhole-shield.png"/> PrivateRouter
 
-```js
+```TS
 const UserRouter = {
   User_State: {
     Auth: Auth,
