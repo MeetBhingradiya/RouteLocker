@@ -6,13 +6,13 @@
 
 ### Install
 
-```bash
+```JS
 npm install react-route-locker 
 ```
 
 OR
 
-```bash
+```JS
 yarn add react-route-locker 
 ```
 
@@ -72,7 +72,7 @@ yarn add react-route-locker
 
 ### Documention
 
-```TS
+```JS
 <Route element={<RouteLocker Properties={[PublicRouter]} />}>
   <Route path={`/auth/login`} element={<LOGIN />} />
   <Route path={`/auth/signup`} element={<SIGNUP />} />
@@ -89,7 +89,7 @@ yarn add react-route-locker
 
 #### <img src="https://img.icons8.com/fluency/25/null/globe.png"/> PublicRouter
 
-```TS
+```JS
 const PublicRouter = {
   User_State: {
     Auth: Auth,
@@ -112,7 +112,7 @@ const PublicRouter = {
 
 #### <img src="https://img.icons8.com/ios-filled/25/null/keyhole-shield.png"/> PrivateRouter
 
-```TS
+```JS
 const UserRouter = {
   User_State: {
     Auth: Auth,
