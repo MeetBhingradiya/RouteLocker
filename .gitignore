@@ -1,7 +1,0 @@
-.vscode/
-node_modules/
-package-lock.json
-dist
-*.tgz
-bundle-analysis.html
-debug.log

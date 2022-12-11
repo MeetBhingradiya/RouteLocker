@@ -1,6 +1,0 @@
-.vscode/
-node_modules/
-dist
-scripts/
-commit.config.js
-rollup.config.js
