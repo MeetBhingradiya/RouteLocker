@@ -1,1 +1,0 @@
-export const RouteLocker = 'Hello World'

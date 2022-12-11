@@ -1,6 +1,6 @@
 # <img src="https://img.icons8.com/external-others-inmotus-design/40/null/external-Route-geo-others-inmotus-design.png"/> Route Locker
 
-- Ultimate React Route Authriozation System
+-   Ultimate React Route Authriozation System
 
 ### Installation
 
@@ -17,20 +17,22 @@ npm intall react-route-locker
 ```
 
 ### Features
-+ 7 Modes.
-+ 5 Core Modes and 2 Universal Modes.
-+ Role Based Public Routes and Role Redirect System.
-+ Unlimited Roles Support.
-+ Block Unauthorised Browsers. (Trusted and Recommendations Browsers : 8)
-+ ```react-router-dom``` V6 Support.
-+ Cutom Component Support in ```react-router-dom``` V6.
+
+-   7 Modes.
+-   5 Core Modes and 2 Universal Modes.
+-   Role Based Public Routes and Role Redirect System.
+-   Unlimited Roles Support.
+-   Block Unauthorised Browsers. (Trusted and Recommendations Browsers : 8)
+-   `react-router-dom` V6 Support.
 
 ### Coming Soon !
-+ Unlimited Custom Variable Support.
-+ Debug Mode For Developers...
-+ Auto Apply React Error Boundaries.
-+ ```react-router-dom``` V5 Support.
-+ init() Function to less object code.
+
+-   Unlimited Custom Variable Support.
+-   Cutom Component Support in `react-router-dom` V6.
+-   Debug Mode For Developers...
+-   Auto Apply React Error Boundaries.
+-   `react-router-dom` V5 Support.
+-   init() Function to less object code.
 
 ### Usage
 
@@ -44,14 +46,13 @@ import { RouteLocker } from "react-route-locker";
 </Route>
 ```
 
-##### OR
-  
+##### OR [Coming Soon !]
+
 ```JS
 import { RouteLocker } from "react-route-locker";
 
 <RouteLocker Properties={[PublicRouter]} path={`path`} element={<Component />} />
 ```
-
 
 V5 React Router Dom [Coming Soon !]
 
@@ -63,21 +64,20 @@ import { RouteLocker } from "react-route-locker";
 
 ### Versions
 
-+ **Public Latest Version** : ```1.0.0```
+-   **Public Latest Version** : `1.0.0`
 
-+ **Private Latest Version** : ```1.0.0```
-> Note : Private Versions are been promoted to Public Versions after testing and fixing bugs.
-+ **Dev Latest Version** : ```1.0.0```
-> Note : Dev Versions is only for live testing version it may be contain bugs and errors.
-<p align="center">
+-   **Private Latest Version** : `1.0.0`
+    > Note : Private Versions are been promoted to Public Versions after testing and fixing bugs.
+-   **Dev Latest Version** : `1.0.0`
+    > Note : Dev Versions is only for live testing version it may be contain bugs and errors.
+    <p align="center">
 
-| <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> | Public | Private | Dev |
-| - | -- | -- | -- |
-V1 | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>| <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>
-V2 | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>
+| <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> | Public                                                              | Private                                                             | Dev                                                               |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| V1                                                                  | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>   | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>   | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> |
+| V2                                                                  | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> |
 
 </p>
-
 
 <!-- JavaScript <img src="https://img.icons8.com/fluency/48/null/javascript.png"/> -->
 <!-- TypeScript <img src="https://img.icons8.com/fluency/48/null/typescript--v2.png"/> -->
@@ -135,8 +135,9 @@ const UserRouter = {
   },
 };
 ```
+
 > ### About
 
-- Made By Meet Bhingradiya
-- License : `MIT`
-- Version : `2.1`
+-   Made By Meet Bhingradiya
+-   License : `MIT`
+-   Version : `2.1`

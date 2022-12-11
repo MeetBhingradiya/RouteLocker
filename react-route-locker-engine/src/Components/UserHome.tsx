@@ -16,4 +16,4 @@ function UserHome() {
     </UserHomeCSS>)
 }
 
-export default UserHome;
+export { UserHome };

@@ -16,4 +16,4 @@ function Login() {
     </LoginCSS>)
 }
 
-export default Login;
+export { Login };
