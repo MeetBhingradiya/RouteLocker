@@ -5,19 +5,19 @@ import styles from './styles.module.css';
  * Main Component Props
  */
 export interface Props {
-  message?: string;
+    message?: string;
 }
 /**
  * Main Component
  */
 function Greeting(props: Props) {
-  useEffect(() => {
-    console.log('Incoming message: ', props.message);
-  }, [props.message]);
+    useEffect(() => {
+        console.log('Incoming message: ', props.message);
+    }, [props.message]);
 
-  return (
-    <div className={styles.container}>{props.message ?? 'No Message'}</div>
-  );
+    return (
+        <div className={styles.container}>{props.message ?? 'No Message'}</div>
+    );
 }
 
 export default Greeting;

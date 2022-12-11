@@ -1,94 +1,142 @@
-<div align="center">
-  <img src="./tools/tsreact.png" width="500" alt="react loves typescript">
-</div>
+# <img src="https://img.icons8.com/external-others-inmotus-design/40/null/external-Route-geo-others-inmotus-design.png"/> Route Locker
 
-# React Typescript Library Template
+- Ultimate React Route Authriozation System
 
-A template to create a react component / library with Typescript.
+### Installation
 
-- React
-- Typescript
-- Rollup
-- Css Modules
-- Jest with code coverage report
-- `Typedoc` for API documentation
-- `commitlint` for conventional-commits
-- `Prettier` and `ESLint` integration with git hooks
-- Optional `example app` generation for testing
-- `Github Pages` integration
-- Release-Please workflow
+Yarn Package Manager (Recommended)
 
-## Install
-
-Clone the repository:
-
-```
-git clone --depth 1 git@github.com:alioguzhan/react-typescript-library.git
+```Bash
+yarn add react-route-locker
 ```
 
-Rename the cloned folder to your library/component name:
+NPM Package Manager
 
-```
-mv react-typescript-library my-react-lib
-```
-
-Install the deps:
-
-```bash
-cd my-react-lib
-yarn install
+```Bash
+npm intall react-route-locker
 ```
 
-Once the installation is completed, A prompt will welcome you. Answer those questions and the installer will bootstrap the environment for you.
+### Features
++ 7 Modes.
++ 5 Core Modes and 2 Universal Modes.
++ Role Based Public Routes and Role Redirect System.
++ Unlimited Roles Support.
++ Block Unauthorised Browsers. (Trusted and Recommendations Browsers : 8)
++ ```react-router-dom``` V6 Support.
++ Cutom Component Support in ```react-router-dom``` V6.
 
-> You can check if there are any outdated package with [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) tool.
+### Coming Soon !
++ Unlimited Custom Variable Support.
++ Debug Mode For Developers...
++ Auto Apply React Error Boundaries.
++ ```react-router-dom``` V5 Support.
++ init() Function to less object code.
 
-## Development
+### Usage
 
-Write your library code to `src/index.tsx` file and run:
+#### V6 React Router Dom
 
-```
-yarn start
-```
+```JS
+import { RouteLocker } from "react-route-locker";
 
-This will watch your changes and reloads the server.
-
-### Commit Messages
-
-This setup expects you to follow conventional-commits format. There is a husky command runs before every commit for validation.
-
-To learn more about conventional commits see [its website](https://www.conventionalcommits.org/en/v1.0.0/).
-
-You can remove that section from `package.json` also remove the related package(s):
-
-```
-yarn remove -D @commitlint/cli
-```
-
-## Build
-
-Run:
-
-```
-yarn build
+<Route element={<RouteLocker Properties={[PublicRouter]} />}>
+  <Route path={`path`} element={<Component />} />
+</Route>
 ```
 
-This will create your compiled files under `./dist` folder. And generates a documentation with `TypeDoc` under `./docs` folder.
+##### OR
+  
+```JS
+import { RouteLocker } from "react-route-locker";
 
-## Test
-
-Jest is configured and ready to use. Just run:
-
-```
-yarn test
+<RouteLocker Properties={[PublicRouter]} path={`path`} element={<Component />} />
 ```
 
-## Docs
 
-This template uses [TypeDoc](https://typedoc.org/) by default.
+V5 React Router Dom [Coming Soon !]
 
-Run `yarn make:docs` and a folder named `docs` will be created in your root directory. Just open `index.html` in your browser to see if your like it or not.
+```JS
+import { RouteLocker } from "react-route-locker";
 
-## CREDITS
+<RouteLocker Properties={[PublicRouter]} component={<Login />} path="*" />
+```
 
-- Logo Design by [@fyunusyildiz](https://github.com/fyunusyildiz)
+### Versions
+
++ **Public Latest Version** : ```1.0.0```
+
++ **Private Latest Version** : ```1.0.0```
+> Note : Private Versions are been promoted to Public Versions after testing and fixing bugs.
++ **Dev Latest Version** : ```1.0.0```
+> Note : Dev Versions is only for live testing version it may be contain bugs and errors.
+<p align="center">
+
+| <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> | Public | Private | Dev |
+| - | -- | -- | -- |
+V1 | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>| <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>
+V2 | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> | <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/>
+
+</p>
+
+
+<!-- JavaScript <img src="https://img.icons8.com/fluency/48/null/javascript.png"/> -->
+<!-- TypeScript <img src="https://img.icons8.com/fluency/48/null/typescript--v2.png"/> -->
+<!-- Source Code <img src="https://img.icons8.com/fluency/48/null/source-code.png"/> -->
+
+<!-- Beta <img src="https://img.icons8.com/fluency/40/null/circular-arrows.png"/> -->
+<!-- Avilable <img src="https://img.icons8.com/fluency/40/null/checkmark.png"/> -->
+<!-- Not Avilable <img src="https://img.icons8.com/fluency/40/null/delete-sign.png"/> -->
+
+### <img src="https://img.icons8.com/fluency/35/null/source-code.png"/> Snippets
+
+#### <img src="https://img.icons8.com/fluency/25/null/globe.png"/> PublicRouter
+
+```JS
+const PublicRouter = {
+  User_State: {
+    Auth: Auth,
+    Role: Role,
+  },
+  mode: "onlyAuth",
+  Redirect: {
+    mode: "RoleRedirect",
+    useRoleRedirect: {
+      Links: ["/admin/Dashboard", "/user/home", "/snippet/home", `/vip/home`],
+      Roles: ["admin", "user", "dev", "vip"],
+    },
+  },
+  useAuth: {
+    enable: true,
+    AntiAuth: true,
+  },
+};
+```
+
+#### <img src="https://img.icons8.com/ios-filled/25/null/keyhole-shield.png"/> PrivateRouter
+
+```JS
+const UserRouter = {
+  User_State: {
+    Auth: Auth,
+    Role: Role,
+  },
+  mode: "useBoth",
+  Redirect: {
+    mode: "Normal",
+    Link: `/auth/login`,
+  },
+  useBoth: ["onlyAuth", "onlyRole"],
+  useAuth: {
+    enable: true,
+  },
+  useRole: {
+    enable: true,
+    Expect_Role: "user",
+  },
+};
+```
+> ### About
+
+- Made By Meet Bhingradiya
+- License : `MIT`
+- Version : `2.1`

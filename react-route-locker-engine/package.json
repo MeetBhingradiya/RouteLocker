@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "--libraryname--": "link:..",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^13.0.0",
         "@testing-library/user-event": "^13.2.1",
@@ -11,10 +10,12 @@
         "@types/node": "^16.7.13",
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
+        "@types/styled-components": "^5.1.26",
         "react": "link:../node_modules/react",
         "react-dom": "link:../node_modules/react-dom",
         "react-route-locker": "link:..",
         "react-scripts": "5.0.1",
+        "styled-components": "^5.3.6",
         "typescript": "^4.4.2",
         "web-vitals": "^2.1.0"
     },

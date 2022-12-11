@@ -1,20 +1,41 @@
 {
     "name": "react-route-locker",
     "version": "1.0.0",
-    "keywords": [],
-    "description": "",
+    "keywords": [
+        "react-route-locker",
+        "React",
+        "react-router",
+        "route-locker",
+        "Public Router",
+        "Private Router",
+        "React Router Dom",
+        "React Private Routes",
+        "React Public Routes",
+        "React Role Redirects Routes",
+        "React Component Library",
+        "React Authorization Library",
+        "Route Authentication Library",
+        "React Route Authorization Library"
+    ],
+    "description": "Ultimate React Route Authorization Library",
     "main": "dist/index.min.js",
     "module": "dist/index.es.js",
     "types": "dist/index.d.ts",
     "files": [
-        "dist"
+        "dist",
+        "README",
+        "LICENSE",
+        "CHANGELOG"
     ],
-    "author": "--username-- <--usermail-->",
+    "author": "@TeamSM/MeetBhingradiya",
     "repository": {
-        "url": "",
-        "type": "git"
+        "type": "git",
+        "url": "git+https://github.com/MeetBhingradiya/RouteLocker.git"
     },
-    "homepage": "",
+    "bugs": {
+        "url": "https://github.com/MeetBhingradiya/RouteLocker/issues"
+    },
+    "homepage": "https://github.com/MeetBhingradiya/RouteLocker#readme",
     "license": "MIT",
     "scripts": {
         "start": "rollup -c rollup.config.js -w",
@@ -30,11 +51,12 @@
         "prepare": "husky install"
     },
     "engines": {
-        "node": ">=12"
+        "node": ">=14"
     },
     "peerDependencies": {
         "react": ">=17",
-        "react-dom": ">=17"
+        "react-dom": ">=17",
+        "react-router-dom": ">=6"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.1.2",
@@ -71,8 +93,8 @@
         "postcss": "^8.4.16",
         "prettier": "^2.7.1",
         "prompt": "^1.3.0",
-        "react": "link:../node_modules/react",
-        "react-dom": "link:../node_modules/react-dom",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "react-router-dom": "^6.4.5",
         "replace-in-file": "^6.3.5",
         "rollup": "^2.79.0",
@@ -91,8 +113,5 @@
             "./node_modules/.bin/prettier --write",
             "./node_modules/.bin/eslint"
         ]
-    },
-    "dependencies": {
-        "WebDev": "link:.."
     }
 }
