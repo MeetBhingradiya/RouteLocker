@@ -8,6 +8,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: google-github-actions/release-please-action@v3
-                with:
+            with:
                     release-type: node
                     package-name: react-route-locker
